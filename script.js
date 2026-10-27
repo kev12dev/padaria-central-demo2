@@ -1,0 +1,1 @@
+const b=document.querySelector("#toggle"),n=document.querySelector("#nav");b.addEventListener("click",()=>{n.classList.toggle("open");b.textContent=n.classList.contains("open")?"✕":"☰"});n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{n.classList.remove("open");b.textContent="☰"}));
